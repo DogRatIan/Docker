@@ -7,8 +7,9 @@ $ ./start_container.sh
 After container started, a directory called "display" will be created to store temporary files.
 
 ## Run xterm
-If you connect the docker host via SSH, run the following script.
+If you connect the docker host via SSH, run the following scripts.
 ```
+$ ./xauth_add.sh
 $ ./ssh_exec.sh xterm
 ```
 

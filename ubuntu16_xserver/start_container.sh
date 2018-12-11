@@ -18,5 +18,5 @@ tag=`docker run -d --rm -P -t \
     $name`
 echo "TAG=$tag"
 docker exec -it $tag chown 1000:1000 /home/dogratian -R
-sudo docker port $tag
+docker port $tag
 echo $tag > display/tag.txt
